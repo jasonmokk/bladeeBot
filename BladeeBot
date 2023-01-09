@@ -1,0 +1,37 @@
+import lyricsgenius
+import random
+import tweepy
+
+class BladeeBot:
+    def __init__(self, consumer_key, consumer_secret, access_token, access_token_secret, all_songs):
+        self.consumer_key = consumer_key
+        self.consumer_secret = consumer_secret
+        self.access_token = access_token
+        self.access_token_secret = access_token_secret
+        self.all_songs = all_songs
+
+        # authenticate with Twitter API
+        auth = tweepy.OAuth1UserHandler(self.consumer_key, self.consumer_secret, self.access_token, self.access_token_secret)
+        self.api = tweepy.API(auth)
+
+    def tweet_random_lyric(self):
+        # Choose a random song from the list
+        song = random.choice(self.all_songs)
+
+        # Use the Genius API to get lyrics for the song
+        genius = lyricsgenius.Genius(keys['CONSUMER_API_KEY'])
+        song_lyrics = genius.search_song(song, "Bladee")
+
+        # Tweet a random lyric from the song
+        lyric = random.choice(song_lyrics.lyrics.split('\n'))
+        self.api.update_status(lyric)
+
+if __name__ == '__main__':
+    # replace these with your own Twitter API keys
+    consumer_key = keys['CONSUMER_API_KEY']
+    consumer_secret = keys['CONSUMER_API_SECRET_KEY']
+    access_token = keys['ACCESS_TOKEN']
+    access_token_secret = keys['ACCESS_TOKEN_SECRET']
+
+    bot = BladeeBot(consumer_key, consumer_secret, access_token, access_token_secret, all_songs)
+    bot.tweet_random_lyric()
