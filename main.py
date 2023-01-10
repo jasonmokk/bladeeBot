@@ -38,6 +38,7 @@ all_songs = ["Be Nice 2 Me", "Obedient", "I’m Goofy", "Hotel Breakfast", "Suga
              "Westfield",
              "College Boy",
              "Cherry Bracelets",
+             "Plastic Surgery",
              "Golden Boy",
              "Close",
              "Psycho",
@@ -146,7 +147,6 @@ all_songs = ["Be Nice 2 Me", "Obedient", "I’m Goofy", "Hotel Breakfast", "Suga
              "Anywhere",
              "Velociraptor",
              "ITS OK TO NOT BE OK",
-             "Plastic Surgery"
              ]
 
 
