@@ -2,14 +2,6 @@ import lyricsgenius
 import random
 import tweepy
 
-# Dictionary containing Twitter API keys and access tokens
-keys = {
-    'CONSUMER_API_KEY': 'RbpoSsPXso8M5xN6gkQ5tMcTI',
-    'CONSUMER_API_SECRET_KEY': 'qis9rGl2C7QpPpWDwianyG7Jbs15mgggzvIbOJEJ41bnZH11ab',
-    'ACCESS_TOKEN': '1606516155035828225-woHELP3iVUreEwD4cpVx8CF7L55Oqy',
-    'ACCESS_TOKEN_SECRET': 'Mb4DPrCW8T7VGhWOa9u92lYlMSYcoDp09P2j5R9luVafE'
-
-}
 
 # List of Bladee songs
 all_songs = ["Be Nice 2 Me", "Obedient", "I’m Goofy", "Hotel Breakfast", "Sugar", "Who Goes There", "Decay",
