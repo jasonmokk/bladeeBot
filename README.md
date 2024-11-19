@@ -5,5 +5,5 @@ This Python bot automates fetching song lyrics using the Genius API and posting 
 ## Requirements
 - Python 3.7+
 - Genius API Access Token
-- Twitter API Keys (Consumer Key, Consumer Secret, Access Token, Access Token Secret)
+- X API Keys (Consumer Key, Consumer Secret, Access Token, Access Token Secret)
 
